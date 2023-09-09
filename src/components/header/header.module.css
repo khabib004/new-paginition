@@ -1,0 +1,17 @@
+header {
+  background-color: #109BE9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header a {
+  color: var(--light-base-color-white, #FFF);
+  font-family: "Mulish";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.08px;
+  text-decoration: none;
+  padding-right: 50px;
+}
