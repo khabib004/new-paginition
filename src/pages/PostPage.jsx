@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import request from "../server";
 import { toast } from "react-toastify";
 
-import "./PostsPage.css"
+import "./PostPage.css"
 
 export class PostPage extends Component {
   state = {

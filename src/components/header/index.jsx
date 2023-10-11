@@ -1,20 +1,28 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import "./header.module.css";
+import logo from "../../assets/Hekto.png";
 
 export class Header extends Component {
   render() {
     return (
       <header>
-        <nav className="container  justify-content-between">
-          <NavLink to="/posts">Home</NavLink>
-          <NavLink to="/about">Business</NavLink>
-          <NavLink to="/contact">Entertainment</NavLink>
-          <NavLink to="/">General</NavLink>
-          <NavLink to="/portfolios">Health</NavLink>
-          <NavLink to="/lifecycle">Science</NavLink>
-        </nav>
+        <div className="container d-flex gap-50px">
+          <div className="logo-page">
+            <Link to="/posts">
+              <img src={logo} alt="" />
+            </Link>
+          </div>
+          <nav className="justify-content-between">
+            <NavLink to="/posts">Home</NavLink>
+            <NavLink to="/about">Pages</NavLink>
+            <NavLink to="/contact">Products</NavLink>
+            <NavLink to="/">Blog </NavLink>
+            <NavLink to="/portfolios">Shop</NavLink>
+            <NavLink to="/lifecycle">Contact</NavLink>
+          </nav>
+        </div>
       </header>
     );
   }
